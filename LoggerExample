@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
+/**
+ * Created by iamkshitij on 07/05/17.
+ */
+public class LoggerExample {
+
+    static Scanner in = new Scanner(System.in);
+    static Logger logger = Logger.getLogger(LoggerExample.class.getName());
+
+    Literal(){
+        logger.setLevel(Level.INFO);
+    }
+    public static void main(String[] args) {
+        int x = 123_123_9483;
+        //int y = in .nextInt();
+        logger.info("x = "+ x);
+        logger.severe("this is value of X :"); 
+    }
+
+}
